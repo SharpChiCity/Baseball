@@ -174,7 +174,8 @@ if __name__ == '__main__':
     d = navigate_to_schedule(schedule_soup)
 
     df = pandas.DataFrame(data=d) 
-    df_clean = df.drop_duplicates().reset_index().sort(columns=['full_date','time_of_game','home_team_name'])
+    df_clean = df.drop_duplicates().sort(columns=['full_date','time_of_game','home_team_name']).reset_index()
+    df_clean.index += 1
     df_clean.to_csv(paste_path + '\ESPNschedules.txt'
         , columns = ['year', 'month', 'day_of_month', 'full_date', 'time_of_game', 
                     'away_team_name', 'away_team_league', 'home_team_name','home_team_league']
