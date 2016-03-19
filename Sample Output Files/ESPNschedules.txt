@@ -1228,7 +1228,7 @@ Key,year,month,day_of_month,full_date,time_of_game,away_team_name,away_team_leag
 1227,2016,07,03,07/03/2016,03:10 PM,Rockies,NL,Dodgers,NL
 1228,2016,07,03,07/03/2016,03:10 PM,Orioles,AL,Mariners,AL
 1229,2016,07,03,07/03/2016,03:40 PM,Yankees,AL,Padres,NL
-1230,2016,07,03,07/03/2016,04:05 PM,Marlins,NL,Braves,NL
+1230,2016,07,03,07/03/2016,07:00 PM,Marlins,NL,Braves,NL
 1231,2016,07,03,07/03/2016,12:07 PM,Indians,AL,Blue Jays,AL
 1232,2016,07,03,07/03/2016,12:10 PM,Cubs,NL,Mets,NL
 1233,2016,07,03,07/03/2016,12:10 PM,Tigers,AL,Rays,AL
