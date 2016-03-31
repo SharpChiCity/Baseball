@@ -1,15 +1,22 @@
 from bs4 import BeautifulSoup
 import requests
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys 
+from selenium.webdriver.common.keys import Keys
 import time
 from datetime import datetime
 import dataset
 import re
 
+
 class DriverSetup:
-    "use to compile all Selenium Driver related code"
-    def __init__(self, dr = '', soup = '', search_results = ''):
+    ''' use to compile all selenium driver related code.
+    This includes initializing and closing the browser, pointing to
+    specific web pages, and parsing the HTML to store results within the class.
+
+    Currently there is no ability to do two bs.find_all()
+    searches within this class.
+    '''
+    def __init__(self, dr='', soup='', search_results=''):
         self.dr = webdriver.Chrome()
         self.soup = soup
         self.search_results = search_results
@@ -17,7 +24,7 @@ class DriverSetup:
     def close(self):
         self.dr.close()
 
-    def go_to_page(self, link, sleeper = 5):
+    def go_to_page(self, link, sleeper=5):
         self.dr.get(link)
         time.sleep(sleeper)
         self.soup = BeautifulSoup(self.dr.page_source, 'html.parser')
@@ -26,69 +33,80 @@ class DriverSetup:
         '''
         Take a tag (t) and pass to the find_all bs4 method
         '''
-        self.search_results = self.soup.find_all(t, id = i)
+        self.search_results = self.soup.find_all(t, id=i)
 
-    def f_a_i(self, t, i):
+    def fai(self, t, i):
         '''
         Take a tag (t) and an id (i) and pass to the find_all bs4 method
         '''
-        self.search_results = self.soup.find_all(t, id = i)
+        self.search_results = self.soup.find_all(t, id=i)
 
-    def f_a_c(self, t, c):
+    def fac(self, t, c):
         '''
         Take a tag (t) and a class (c) and pass to the find_all bs4 method
         '''
-        self.search_results = self.soup.find_all(t, class_ = i)
+        self.search_results = self.soup.find_all(t, class_=i)
 
 
 class GameInfo:
-    "all information related to a game"
-    def __init__(self, game_date = '', game_link = '', bleacher_ticket_status = 'unknown'):
+    '''
+    Stores all information related to a game
+    '''
+    def __init__(self, game_date='', game_link='',
+                 bleacher_ticket_status='unknown'):
         self.date = game_date
         self.link = game_link
         self.status = bleacher_ticket_status
-        self.prices =  {}
+        self.prices = {}
+
 
 def convert_text_to_date(string):
-    return datetime.strftime(datetime.strptime(string + ' 2016', '%b %d %Y'), '%m/%d/%Y')
-        
+    # single line of code to convert date in the form of "Apr 16" to 04/16/2016
+    return datetime.strftime(
+        datetime.strptime(string + ' 2016', '%b %d %Y'),
+        '%m/%d/%Y')
 
 
 if __name__ == '__main__':
+    ''' this function points to the cubs ticket website, grabs all games where
+    tickets are being sold (via dr.fai), stores all info for each particular
+    game in a list of classes. WIll then parse through that list into a db
+    '''
 
+    # GET TICKET INFORMATION
     tickets_url = 'http://chicago.cubs.mlb.com/ticketing/singlegame.jsp?c_id=chc'
 
     dr = DriverSetup()
     dr.go_to_page(tickets_url)
 
-    dr.f_a_i('li',re.compile('(^gm)\d{6}'))
+    dr.fai('li', re.compile('(^gm)\d{6}'))
 
-
+    # BUILD LIST OF CLASSES TO STORE GAME INFO
     objs = list()
-
     for i in range(len(dr.search_results)):
         objs.append(GameInfo())
 
-
+    # FOR EACH GAME, GET INFO
     for n, game in enumerate(dr.search_results):
         cl = objs[n]
 
-        cl.date = convert_text_to_date(game.find('li', class_ = 'game_date').text)
+        cl.date = convert_text_to_date(game.find('li', class_='game_date').text)
         print(cl.date)
 
-        cl.link = game.find('a', class_ = 'bam-button bam-button-tickets')['href']
+        cl.link = game.find('a', class_='bam-button bam-button-tickets')['href']
 
         if 'soldout' in cl.link:
             cl.status = 'soldout'
         else:
             dr.go_to_page(cl.link, 2)
 
-            dr.f_a_i('div','availability_right_column')
+            dr.fai('div', 'availability_right_column')
 
-            for r in dr.search_results[0].find_all('div', class_ = 'price_level_row')[1:]:
+            for r in dr.search_results[0].find_all('div', class_='price_level_row')[1:]:
                 section_name = r.find('div', class_ = 'price_level_header').get_text().strip()
                 section_price = r.find('div', class_ = 'price_amount').get_text().strip()
-                section_price_with_tax = float(section_price.replace('$','')) * 0.12 + 4.75 * 1.09
+                section_price_with_tax = round(
+                    float(section_price.replace('$', '')) * 0.12 + 4.75 * 1.09, 2)
                 cl.prices[section_name] = section_price_with_tax
 
             try:
