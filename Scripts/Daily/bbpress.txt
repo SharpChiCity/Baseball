@@ -1,0 +1,166 @@
+04-10
+Red Sox||Blue Jays
+Steven Wright|R|Marco Estrada|R
+Mookie Betts|R|Kevin Pillar|R
+Dustin Pedroia|R|Josh Donaldson|R
+Xander Bogaerts|R|Jose Bautista|R
+David Ortiz|L|Edwin Encarnacion|R
+Hanley Ramirez|R|Troy Tulowitzki|R
+Travis Shaw|L|Michael Saunders|L
+Chris Young|R|Russell Martin|R
+Blake Swihart|S|Ryan Goins|L
+Jackie Bradley Jr.|L|Darwin Barney|R
+Phillies||Mets
+Jeremy Hellickson|R|Matt Harvey|R
+Freddy Galvis|S|Curtis Granderson|L
+Cesar Hernandez|S|David Wright|R
+Odubel Herrera|L|Yoenis Cespedes|R
+Maikel Franco|R|Lucas Duda|L
+Ryan Howard|L|Neil Walker|S
+Carlos Ruiz|R|Michael Conforto|L
+Cedric Hunter|L|Asdrubal Cabrera|S
+Peter Bourjos|R|Kevin Plawecki|R
+Jeremy Hellickson|R|Matt Harvey|R
+Pirates||Reds
+Jeff Locke|L|Tim Melville|R
+John Jaso|L|Zack Cozart|R
+Andrew McCutchen|R|Eugenio Suarez|R
+David Freese|R|Joey Votto|L
+Starling Marte|R|Brandon Phillips|R
+Gregory Polanco|L|Devin Mesoraco|R
+Josh Harrison|R|Jay Bruce|L
+Jordy Mercer|R|Adam Duvall|R
+Chris Stewart|R|Tim Melville|R
+Jeff Locke|L|Billy Hamilton|S
+Marlins||Nationals
+Tom Koehler|R|Joe Ross|R
+Dee Gordon|L|Michael Taylor|R
+Marcell Ozuna|R|Anthony Rendon|R
+Christian Yelich|L|Bryce Harper|L
+Giancarlo Stanton|R|Daniel Murphy|L
+Martin Prado|R|Jayson Werth|R
+Justin Bour|L|Wilson Ramos|R
+J.T. Realmuto|R|Clint Robinson|L
+Adeiny Hechavarria|R|Danny Espinosa|S
+Tom Koehler|R|Joe Ross|R
+Cardinals||Braves
+Adam Wainwright|R|Williams Perez|R
+Matt Carpenter|L|Erick Aybar|S
+Jeremy Hazelbaker|L|Nick Markakis|L
+Stephen Piscotty|R|Freddie Freeman|L
+Brandon Moss|L|Adonis Garcia|R
+Matt Adams|L|Hector Olivera|R
+Yadier Molina|R|Tyler Flowers|R
+Kolten Wong|L|Jace Peterson|L
+Greg Garcia|L|Drew Stubbs|R
+Adam Wainwright|R|Williams Perez|R
+Rays||Orioles
+Jake Odorizzi|R|Vance Worley|R
+Logan Forsythe|R|Joey Rickard|R
+Logan Morrison|L|Manny Machado|R
+Evan Longoria|R|Chris Davis|L
+Corey Dickerson|L|Mark Trumbo|R
+Steve Pearce|R|Matt Wieters|S
+Brad Miller|L|Pedro Alvarez|L
+Steven Souza Jr.|R|J.J. Hardy|R
+Kevin Kiermaier|L|Jonathan Schoop|R
+Curt Casali|R|Hyun Soo Kim|L
+Indians||White Sox
+Josh Tomlin|R|Jose Quintana|L
+Rajai Davis|R|Austin Jackson|R
+Jason Kipnis|L|Brett Lawrie|R
+Francisco Lindor|S|Jose Abreu|R
+Mike Napoli|R|Todd Frazier|R
+Carlos Santana|S|Melky Cabrera|S
+Marlon Byrd|R|Avisail Garcia|R
+Roberto Perez|R|Jerry Sands|R
+Jose Ramirez|S|Dioner Navarro|S
+Collin Cowgill|R|Tyler Saladino|R
+Astros||Brewers
+Dallas Keuchel|L|Jimmy Nelson|R
+Jose Altuve|R|Domingo Santana|R
+George Springer|R|Jonathan Villar|S
+Carlos Correa|R|Ryan Braun|R
+Colby Rasmus|L|Chris Carter|R
+Tyler White|R|Aaron Hill|R
+Preston Tucker|L|Martin Maldonado|R
+Marwin Gonzalez|S|Yadiel Rivera|R
+Jason Castro|L|Jimmy Nelson|R
+Dallas Keuchel|L|Keon Broxton|R
+Twins||Royals
+Ricky Nolasco|R|Edinson Volquez|R
+Brian Dozier|R|Alcides Escobar|R
+Eddie Rosario|L|Mike Moustakas|L
+Joe Mauer|L|Lorenzo Cain|R
+Miguel Sano|R|Eric Hosmer|L
+Byung Ho Park|R|Kendrys Morales|S
+Eduardo Escobar|S|Alex Gordon|L
+Eduardo Nunez|R|Salvador Perez|R
+John Ryan Murphy|R|Christian Colon|R
+Byron Buxton|R|Paulo Orlando|R
+Rangers||Angels
+Martin Perez|L|Jered Weaver|R
+Delino DeShields|R|Yunel Escobar|R
+Nomar Mazara|L|Craig Gentry|R
+Prince Fielder|L|Mike Trout|R
+Adrian Beltre|R|Albert Pujols|R
+Mitch Moreland|L|C.J. Cron|R
+Ian Desmond|R|Kole Calhoun|L
+Elvis Andrus|R|Andrelton Simmons|R
+Hanser Alberto|R|Geovany Soto|R
+Bryan Holaday|R|Johnny Giavotella|R
+Dodgers||Giants
+Scott Kazmir|L|Johnny Cueto|R
+Chase Utley|L|Denard Span|L
+Corey Seager|L|Joe Panik|L
+Justin Turner|R|Buster Posey|R
+Adrian Gonzalez|L|Hunter Pence|R
+Yasiel Puig|R|Brandon Belt|L
+Joc Pederson|L|Matt Duffy|R
+Trayce Thompson|R|Brandon Crawford|L
+Austin Barnes|R|Johnny Cueto|R
+Scott Kazmir|L|Angel Pagan|S
+Cubs||Diamondbacks
+Jake Arrieta|R|Shelby Miller|R
+Ben Zobrist|S|Socrates Brito|L
+Jason Heyward|L|Phil Gosselin|R
+Kris Bryant|R|Paul Goldschmidt|R
+Anthony Rizzo|L|David Peralta|L
+Jorge Soler|R|Brandon Drury|R
+Tommy La Stella|L|Jake Lamb|L
+Miguel Montero|L|Chris Owings|R
+Addison Russell|R|Chris Herrmann|L
+Jake Arrieta|R|Shelby Miller|R
+Athletics||Mariners
+Chris Bassitt|R|Felix Hernandez|R
+Coco Crisp|S|Norichika Aoki|L
+Chris Coghlan|L|Kyle Seager|L
+Josh Reddick|L|Robinson Cano|L
+Stephen Vogt|L|Nelson Cruz|R
+Jed Lowrie|S|Adam Lind|L
+Khris Davis|R|Seth Smith|L
+Yonder Alonso|L|Ketel Marte|S
+Josh Phegley|R|Steve Clevenger|L
+Marcus Semien|R|Leonys Martin|L
+Padres||Rockies
+James Shields|R|Chad Bettis|R
+Jon Jay|L|Charlie Blackmon|L
+Cory Spangenberg|L|Trevor Story|R
+Matt Kemp|R|Carlos Gonzalez|L
+Wil Myers|R|Nolan Arenado|R
+Melvin Upton Jr.|R|Gerardo Parra|L
+Christian Bethancourt|R|DJ LeMahieu|R
+Alexei Ramirez|R|Ben Paulsen|L
+Adam Rosales|R|Tony Wolters|L
+James Shields|R|Chad Bettis|R
+Yankees||Tigers
+Masahiro Tanaka|R|Justin Verlander|R
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||

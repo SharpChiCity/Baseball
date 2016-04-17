@@ -1,0 +1,15 @@
+MIN04-15|04-15|MIN|Alan Porter|John Tumpane|Jeff Kellogg|Brian O'Nora
+SD04-15|04-15|SD|Cory Blaser|Jeff Nelson|Doug Eddings|Laz Diaz
+MIA04-15|04-15|MIA|Adrian Johnson|Gary Cederstrom|Eric Cooper|Jim Wolf
+TEX04-15|04-15|TEX|Jordan Baker|Pat Hoberg|Mike Everitt|Paul Emmel
+TB04-15|04-15|TB|Manny Gonzalez|Fieldin Culbreth|CB Bucknor|Jim Reynolds
+STL04-15|04-15|STL|Ron Kulpa|Gabe Morales|Paul Nauert|Jerry Meals
+CHC04-15|04-15|CHC|John Hirschbeck|Bill Welke|Vic Carapazza|Clint Fagan
+HOU04-15|04-15|HOU|Gerry Davis|Sam Holbrook|Rob Drake|Carlos Torres
+OAK04-15|04-15|OAK|Mike DiMuro|Quinn Wolcott|Brian Gorman|Mark Carlson
+PIT04-15|04-15|PIT|Marvin Hudson|James Hoye|Chad Fairchild|Jim Joyce
+CLE04-15|04-15|CLE|Dale Scott|Dan Iassogna|Bob Davidson|Lance Barrett
+NYY04-15|04-15|NYY|Mark Wegner|Marty Foster|Mike Muchlinski|Mike Winters
+LAD04-15|04-15|LAD|David Rackley|Larry Vanover|Alfonso Marquez|Chris Guccione
+BOS04-15|04-15|BOS|Ted Barrett|Angel Hernandez|Lance Barksdale|Will Little
+PHI04-15|04-15|PHI|Joe West|Kerwin Danley|Andy Fletcher|Mark Ripperger

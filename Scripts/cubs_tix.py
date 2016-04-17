@@ -1,9 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
+import os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 from datetime import datetime
+from datetime import date
 import dataset
 import re
 
@@ -106,7 +108,7 @@ if __name__ == '__main__':
                 section_name = r.find('div', class_ = 'price_level_header').get_text().strip()
                 section_price = r.find('div', class_ = 'price_amount').get_text().strip()
                 section_price_with_tax = round(
-                    float(section_price.replace('$', '')) * 0.12 + 4.75 * 1.09, 2)
+                    float(section_price.replace('$', '')) * 1.12 + 4.75 * 1.09, 2)
                 cl.prices[section_name] = section_price_with_tax
 
             try:
@@ -114,9 +116,13 @@ if __name__ == '__main__':
             except KeyError:
                 cl.status = 'soldout'
 
-    f = open('C:/users/monstar/downloads/cubs_tix.txt','w')
+    f = open(os.path.dirname(os.path.realpath(__file__)) + '/cubs_tix.txt','w')
+    g = open(os.path.dirname(os.path.realpath(__file__)) + '/cubs_tix_all.txt','a')
     for i in objs:
         f.write('{0}|{1}\n'.format(i.date, i.status))
+        g.write('{0}|{1}|{2}\n'.format(str(date.today())[:],i.date, i.status))
     f.close()
+    g.close()
+
 
     dr.close()
