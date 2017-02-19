@@ -131,10 +131,10 @@ def get_schedule(abbr, list_of_game_info):
                 else:
                     excel_time_clean = game_time
                 
-                # print '%s -- %s -- %s' % (abbr, str(n), str(game_number))
+                # print('%s -- %s -- %s' % (abbr, str(n), str(game_number))
                 
                 list_of_game_info.append({
-                            'year' : '2016'
+                            'year' : '2017'
                             , 'month' : excel_date[:2]
                             , 'day_of_month' : excel_date[3:5]
                             , 'full_date' : excel_date
@@ -160,7 +160,7 @@ def navigate_to_schedule(links):
     for team in all_teams:
         team_name = team.find('h5').get_text()
         team_abbr = team.find_all('a')[4]['href'][-3:].upper()
-        print team_abbr
+        print(team_abbr)
         l = get_schedule(team_abbr, l)
 
     return l
